@@ -1,0 +1,123 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(6, 250, 250);
+
+}
+.container {
+  text-align: center;
+  margin-top: 100px;
+}
+h1{
+  font-size: 5rem;
+}
+.line{
+  height: 0.25rem;
+  width: 10rem;
+  background: orange;
+  margin-top: -40px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.nav{
+  background-color: rgb(255, 251, 0);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  
+}
+.navlogo{
+  display: flex;
+  justify-content: space-between;
+ 
+}
+#img{
+  width: 75px;
+ 
+}
+.navtoggle {
+  font-size: 1.5rem;
+  color: blue;
+  background: transparent;
+  border-color: transparent;
+  cursor: pointer;
+  display: none; 
+  
+}
+.navtoggle:hover {
+  color: black;
+  transform: rotate(90deg);
+}
+.links{
+  display: flex;
+  list-style: none;
+  
+}
+.links a{
+  font-size: 1.5rem;
+  display: block;
+  padding: 0.5rem 1rem;
+  color: black;
+  cursor: pointer;
+}
+.links a:hover {
+  background: rgb(223, 223, 228);
+  color: rgb(27, 0, 177);
+  padding-left: 1.5rem;
+}
+.sociallinks{
+  display: flex;
+  list-style: none;
+ 
+  font-size: 1.5rem;
+  padding: 0.5rem 1rem;
+  margin: 0 0.5rem;
+}
+.sociallinks a 
+{
+  margin: 0 0.5rem;
+  cursor: pointer;
+}
+@media screen and (min-width:400px) and (max-width:750px)
+{
+  .links {
+    height: 0;
+    overflow: hidden;
+    list-style: none;
+  }
+
+  .sociallinks{
+    display: none;
+  }
+  .slinks {
+    height: 10rem;
+    flex-direction: column;
+    margin-right: 450px;
+    margin-top: 150px;
+  }
+  .navtoggle {
+    font-size: 1.5rem;
+    color: blue;
+    background: transparent;
+    border-color: transparent;
+    cursor: pointer;
+    display: inline-block; 
+  }
+  .navtoggle:hover {
+    color: black;
+    transform: rotate(90deg);
+  }
+  .links a {
+    color: black;
+    font-size: 1rem;
+    text-transform: capitalize;
+    display: block;
+    padding: 0.5rem 1rem;
+  }
+  .links a:hover {
+    background: lightblue;
+    color: blue;
+    padding-left: 1.5rem;
+  }
+}

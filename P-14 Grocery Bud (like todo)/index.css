@@ -1,0 +1,163 @@
+.body{
+  margin: 0;
+  padding: 0;
+  background-color: aqua;
+}
+h3{
+  font-size: 3rem;
+}
+.section {
+  padding: 5rem 0;
+}
+
+.section-center {
+  width: 90vw;
+  margin: 0 auto;
+  max-width: 35rem;
+  margin-top: 8rem;
+}
+.section-center {
+  background: white;
+  border-radius: 5px;
+  box-shadow: gray;
+  transition: 2s;
+  padding: 2rem;
+}
+.section-center:hover {
+  box-shadow: darkgray;
+}
+.alert {
+  margin-bottom: 1rem;
+  height: 1.25rem;
+  display: grid;
+  align-items: center;
+  text-align: center;
+  font-size: 0.7rem;
+  border-radius: 0.25rem;
+  letter-spacing: 2px;
+  text-transform: capitalize;
+}
+.alert-danger {
+  color: #721c24;
+  background: #f8d7da;
+}
+.alert-success {
+  color: #155724;
+  background: #d4edda;
+}
+.grocery-form h3 {
+  color:rgb(1, 36, 77);
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+.form-control {
+  display: flex;
+  justify-content: center;
+}
+#grocery {
+  padding: 0.25rem;
+  padding-left: 1rem;
+  background: rgb(184, 188, 255);
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-color: transparent;
+  font-size: 1rem;
+  flex: 1 0 auto;
+  color: rgb(20, 20, 20);
+}
+#grocery::placeholder {
+  font-family: sans-serif;
+  color: rgb(122, 121, 121);
+}
+.submit-btn {
+  background: rgb(195, 195, 255);
+  border-color: transparent;
+  flex: 0 0 5rem;
+  display: grid;
+  align-items: center;
+  padding: 0.25rem;
+  text-transform: capitalize;
+  letter-spacing: 2px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  cursor: pointer;
+  content: black;
+  transition: 1s;
+  font-size: 0.85rem;
+}
+.submit-btn:hover {
+  background:darkblue;
+  color: white;
+}
+
+.grocery-container {
+  margin-top: 2rem;
+  transition: 1s;
+  visibility: hidden;
+}
+.show-container {
+  visibility: visible;
+}
+.grocery-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+  transition: 1s;
+  padding: 0.25rem 1rem;
+  border-radius: 5px;
+  text-transform: capitalize;
+}
+.grocery-item:hover {
+  color: grey;
+  background: lightgray;
+}
+.grocery-item:hover .title {
+  color: blue;
+}
+.title {
+  margin-bottom: 0;
+  color: rgb(116, 0, 0);
+  letter-spacing: 2px;
+  transition: 1s;
+}
+.edit-btn,
+.delete-btn {
+  background: transparent;
+  border-color: transparent;
+  cursor: pointer;
+  font-size: 0.7rem;
+  margin: 0 0.15rem;
+  transition: 1s;
+}
+.edit-btn {
+  color: rgb(113, 189, 0);
+}
+.edit-btn:hover {
+  color: darkgreen;
+}
+.delete-btn {
+  color: rgb(255, 91, 41);
+}
+.delete-btn:hover {
+  color: darkred;
+}
+.clear-btn {
+  text-transform: capitalize;
+  width: 10rem;
+  height: 1.5rem;
+  display: grid;
+  align-items: center;
+  background: transparent;
+  border-color: transparent;
+  color: blue;
+  margin: 0 auto;
+  font-size: 0.85rem;
+  letter-spacing: 2px;
+  cursor: pointer;
+  transition: 1s;
+  margin-top: 1.25rem;
+}
+.clear-btn:hover {
+  color: darkblue;
+}

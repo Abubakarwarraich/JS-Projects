@@ -1,0 +1,68 @@
+.heroimg {
+  min-height: 100vh;
+  background: url("./hero.jpeg") center/cover no-repeat;
+  display: grid;
+  place-items: center;
+}
+.banner {
+  background:white;
+  padding: 4rem 0;
+  border-radius:10px;
+  box-shadow: grey;
+  text-align: center;
+  width: 40vw;
+}
+.modal-btn {
+  margin-top: 2rem;
+  background: darkblue;
+  border-color: red;
+  color: white;
+  width: 10rem;
+  height: 2.5rem;
+  font-size: 1rem;
+  border-radius: 10px;
+}
+.modal-btn:hover {
+  background: transparent;
+  color: darkblue;
+}
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(73, 166, 233, 0.5);
+  display: grid;
+  place-items: center;
+  visibility: hidden;
+  z-index: -10;
+}
+.open-modal {
+  visibility: visible;
+  z-index: 10;
+}
+.modal-container {
+  background: white;
+  border-radius: 10px;
+  width: 50vw;
+  height: 30vh;
+  text-align: center;
+  display: grid;
+  place-items: center;
+  position: relative;
+}
+.close-btn {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 2rem;
+  background: transparent;
+  border-color: transparent;
+  color: darkred;
+  cursor: pointer;
+}
+.close-btn:hover {
+  color: lightred;
+  transform: scale(1.3);
+}

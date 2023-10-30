@@ -1,0 +1,119 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(6, 250, 250);
+  display: grid;
+  place-items: center;
+}
+#p1{
+  font-size: 1rem;
+  font-weight: 700 ;
+}
+.container {
+  text-align: center;
+  width: 52.5vw;
+}
+h1{
+  font-size: 2.5rem;
+}
+.line{
+  height: 0.25rem;
+  width: 5rem;
+  background: orange;
+  margin-top: -20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.reviews{
+  background-color: rgb(255, 255, 255);
+  padding: 1.5rem 2rem;
+  border-radius: 10px;
+  text-align: center;
+  margin-top: 30px;
+  width: 40vw;
+  margin-left: auto;
+  margin-right: auto;
+}
+.img-container {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin: 0 auto;
+  margin-bottom: 1.5rem;
+}
+#person-img {
+  width: 100%;
+  display: block;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  position: relative;
+}
+.img-container::after {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f10e";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 2.5rem;
+  height: 2.5rem;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  transform: translateY(25%);
+  background: rgb(229, 207, 240);
+  color: rgb(236, 0, 0);
+}
+.img-container::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: rgb(233, 0, 0);
+  position: absolute;
+  top: -0.25rem;
+  right: -0.5rem;
+  border-radius: 50%;
+}
+#author {
+  margin-bottom: 0.25rem;
+  font-size: 2rem;
+}
+#job {
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  color: darkblue;
+  font-size: 1rem;
+}
+#info {
+  margin-bottom: 0.75rem;
+  color: black;
+  font-size: 1rem;
+}
+.prev-btn,
+.next-btn {
+  color: black;
+  font-size: 1.25rem;
+  background: transparent;
+  border-color: transparent;
+  margin: 0 0.5rem;
+  transition: var(--transition);
+  cursor: pointer;
+}
+.prev-btn:hover,
+.next-btn:hover {
+  color: rgb(224, 2, 2);
+}
+.random-btn {
+  margin-top: 0.5rem;
+  background: crimson;
+  color: white;
+  padding: 0.25rem 0.5rem;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.random-btn:hover {
+  background: rgb(248, 160, 157);
+  color: rgb(0, 0, 0);
+}
